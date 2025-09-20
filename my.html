@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vivek Bhadoriya - Video Editor Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #111827; /* Dark Blue-Gray */
+            color: #F3F4F6; /* Light Gray */
+        }
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            background: #000;
+            border-radius: 0.5rem;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .glass-effect {
+            background: rgba(31, 41, 55, 0.6);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header & Navigation -->
+    <header class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 glass-effect">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#"   class="flex items-center justify-center w-16 h-16 rounded-full 
+            bg-gradient-to-r from-purple-600 to-blue-500 
+            text-white text-2xl font-extrabold tracking-widest 
+            shadow-lg hover:scale-110 transition-transform duration-300">
+     VB</a>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#work" class="text-gray-300 hover:text-white transition-colors duration-300">Work</a>
+                <a href="#about" class="text-gray-300 hover:text-white transition-colors duration-300">About</a>
+                <a href="#contact" class="text-gray-300 hover:text-white transition-colors duration-300">Contact</a>
+            </nav>
+            <a href="#contact" class="hidden md:inline-block bg-indigo-600 text-white py-2 px-5 rounded-lg hover:bg-indigo-700 transition-colors duration-300">
+                Get In Touch
+            </a>
+            <!-- Mobile Menu Button (optional, for smaller screens) -->
+            <button class="md:hidden focus:outline-none">
+                 <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="pt-32 pb-16 min-h-screen flex items-center">
+            <div class="container mx-auto px-6 text-center">
+                <div class="max-w-4xl mx-auto">
+                    <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold mb-4 leading-tight text-white">Vivek Bhadoriya</h1>
+                    <p class="text-xl md:text-2xl text-indigo-400 mb-8 font-light tracking-wide">Video Editor & Motion Graphics Artist</p>
+                    <p class="text-lg text-gray-300 max-w-2xl mx-auto mb-12">
+                        Crafting compelling stories that move, engage, and inspire. Transforming raw footage into polished, impactful visual narratives.
+                    </p>
+                </div>
+
+                <!-- Main Showreel -->
+                <div class="max-w-5xl mx-auto shadow-2xl shadow-indigo-900/40 rounded-lg">
+                    <p class="text-sm uppercase tracking-widest text-gray-400 mb-4">Showreel 2025</p>
+                    <div class="video-container bg-gray-900 border border-gray-700 rounded-lg overflow-hidden">
+                      <video autoplay muted loop playsinline class="w-full h-auto">
+                        <source src="main0.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                      </video>
+                    </div>
+                  </div>
+                  
+
+        <!-- Featured Work Section -->
+        <section id="work" class="py-20 bg-gray-900">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl md:text-5xl font-bold text-white">Featured Work</h2>
+                    <p class="text-lg text-gray-400 mt-4">A selection of projects I'm proud of.</p>
+                </div>
+                
+                <!-- Project Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                    
+                    <!-- Project 1 -->
+                    <div class="glass-effect rounded-xl p-6 transition-transform transform hover:-translate-y-2">
+                        <div class="video-container mb-6 shadow-lg">
+                             <!-- EDIT THIS: Replace with your project video embed link -->
+                             <iframe src="https://drive.google.com/file/d/1L3vQPRdwLFbdpJiZDLaLfUhbLnA46xQd/preview" 
+                             title="Project 1" 
+                             frameborder="0" 
+                             allow="autoplay; fullscreen; picture-in-picture" 
+                             allowfullscreen
+                             class="w-full h-64 md:h-96 rounded-lg">
+                     </iframe>
+                        </div>
+                        <h3 class="text-2xl font-semibold mb-2 text-white">Cinematic Highlight + Teaser</h3>
+                        <p class="text-indigo-400 font-medium mb-3">Role: Editor, Colorist</p>
+                        <p class="text-gray-300">
+                            Delivers a polished highlight film to relive the full story and a 60s teaser built to spark excitement and share instantly.
+                        </p>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="glass-effect rounded-xl p-6 transition-transform transform hover:-translate-y-2">
+                        <div class="video-container mb-6 shadow-lg">
+                          <iframe src="https://drive.google.com/file/d/1DaumGoNdYkXxPbR2sGqphlYyzv5_2-Av/preview" 
+                                  title="Project 2" 
+                                  frameborder="0" 
+                                  allow="autoplay; fullscreen; picture-in-picture" 
+                                  allowfullscreen
+                                  class="w-full h-64 md:h-96 rounded-lg">
+                          </iframe>
+                        </div>
+                        <h3 class="text-2xl font-semibold mb-2 text-white">Ferrari Storytelling</h3>
+                        <p class="text-indigo-400 font-medium mb-3">Role: Editor, Motion Graphics</p>
+                        <p class="text-gray-300">
+                            A high-energy cinematic piece blending sleek visuals, dynamic motion, and emotional pacing to showcase Ferrari’s legacy.
+                        </p>
+                      </div>
+                      
+
+                     <!-- Project 3 -->
+                    <div class="glass-effect rounded-xl p-6 transition-transform transform hover:-translate-y-2">
+                        <div class="video-container mb-6 shadow-lg">
+                             <!-- EDIT THIS: Replace with your project video embed link -->
+                             <iframe 
+                             src="https://drive.google.com/file/d/1OiFB6_-zsd-OjphsQqQYiCa9UAAkZhP_/preview"
+                             title="Project 3"
+                             frameborder="0"
+                             allow="autoplay; fullscreen; picture-in-picture"
+                             allowfullscreen
+                             class="w-full h-64 md:h-96 rounded-lg">
+                           </iframe>
+
+                        </div>
+                        <h3 class="text-2xl font-semibold mb-2 text-white">Cinematic Highlight</h3>
+                        <p class="text-indigo-400 font-medium mb-3">Role: Editor, Grading</p>
+                        <p class="text-gray-300">
+                            A timeless short film capturing emotions, candid moments, and storytelling in a cinematic style. Relive your big day like a movie.
+                        </p>
+                    </div>
+
+                     <!-- Project 4 -->
+                    <div class="glass-effect rounded-xl p-6 transition-transform transform hover:-translate-y-2">
+                        <div class="video-container mb-6 shadow-lg">
+                             <!-- EDIT THIS: Replace with your project video embed link -->
+                             <iframe 
+                             src="https://drive.google.com/file/d/1Vm55wpTV1DGiR-IHPQpswLBMUy0bQirg/preview"
+                             title="Project 4"
+                             frameborder="0"
+                             allow="autoplay; fullscreen; picture-in-picture"
+                             allowfullscreen
+                             class="w-full h-64 md:h-96 rounded-lg">
+                           </iframe>
+                        </div>
+                        <h3 class="text-2xl font-semibold mb-2 text-white">Degital Caricature Invitation</h3>
+                        <p class="text-indigo-400 font-medium mb-3">Role: Editor, Motion Graphics</p>
+                        <p class="text-gray-300">
+                            A fun and creative invitation designed with personalized caricature art that reflects the couple’s unique vibe.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About & Skills Section -->
+        <section id="about" class="py-20">
+            <div class="container mx-auto px-6">
+                <div class="flex flex-col md:flex-row items-center gap-12">
+                    <!-- Image -->
+                    <div class="w-full md:w-1/3 flex-shrink-0">
+                        <img src="my.jpg" alt="A professional headshot of Vivek Bhadoriya class="rounded-full mx-auto w-64 h-64 md:w-full md:h-auto md:rounded-lg object-cover shadow-2xl">
+                    </div>
+                    <!-- Text Content -->
+                    <div class="w-full md:w-2/3 text-center md:text-left">
+                        <h2 class="text-4xl md:text-5xl font-bold text-white mb-6">About Me</h2>
+                        <p class="text-gray-300 text-lg mb-6 leading-relaxed">
+                            I'm Vivek, a passionate video editor with over 4 years of experience in transforming creative visions into reality. My expertise lies in storytelling, rhythm, and attention to detail. I specialize in crafting cinematic wedding highlights that beautifully capture emotions, moments, and memories. I thrive on collaborating with couples, creators, and brands to produce films that not only look stunning but also leave a lasting emotional impact.
+                        </p>
+                        <p class="text-gray-300 text-lg mb-8 leading-relaxed">
+                            From fast-paced commercials to narrative short films, I bring a dedicated and creative approach to every project.
+                        </p>
+
+                        <h3 class="text-2xl font-semibold text-white mb-4">My Toolkit</h3>
+                        <div class="flex flex-wrap justify-center md:justify-start gap-4">
+                            <span class="bg-gray-700 text-gray-200 py-2 px-4 rounded-lg">Adobe Premiere Pro</span>
+                            <span class="bg-gray-700 text-gray-200 py-2 px-4 rounded-lg">After Effects</span>
+                            <span class="bg-gray-700 text-gray-200 py-2 px-4 rounded-lg">DaVinci Resolve</span>
+                            <span class="bg-gray-700 text-gray-200 py-2 px-4 rounded-lg">Final Cut Pro</span>
+                             <span class="bg-gray-700 text-gray-200 py-2 px-4 rounded-lg">Adobe Photoshop</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20 bg-gray-900">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-4xl md:text-5xl font-bold text-white">Have a project in mind?</h2>
+                <p class="text-xl text-gray-400 mt-4 mb-8 max-w-2xl mx-auto">I'm currently available for freelance projects. Let's collaborate and create something amazing together.</p>
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=vivekbhadoriyaa@gmail.com" target="_blank"
+   class="inline-block bg-indigo-600 text-white text-lg py-4 px-10 rounded-lg hover:bg-indigo-700 transition-all duration-300 transform hover:scale-150">
+   vivekbhadoriyaa@gmail.com
+</a>
+</br>
+<a href="tel:+917440259283" 
+   class="inline-block bg-indigo-600 text-white text-lg py-4 px-10 rounded-lg hover:bg-indigo-700 transition-all duration-300 transform hover:scale-105">
+   +91 7440259283
+</a>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 border-t border-gray-800">
+        <div class="container mx-auto px-6 py-6 flex flex-col sm:flex-row justify-between items-center">
+            <p class="text-gray-400">&copy; 2025 Vivek Bhadoriya. All Rights Reserved.</p>
+            <div class="flex space-x-6">
+                <!-- Instagram -->
+                <a href="https://www.instagram.com/vivek_s_bhadouriya/" target="_blank" class="text-gray-400 hover:text-white transition-colors">
+                  <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M7.75 2h8.5A5.75 5.75 0 0122 7.75v8.5A5.75 5.75 0 0116.25 22h-8.5A5.75 5.75 0 012 16.25v-8.5A5.75 5.75 0 017.75 2zm0 1.5A4.25 4.25 0 003.5 7.75v8.5A4.25 4.25 0 007.75 20.5h8.5a4.25 4.25 0 004.25-4.25v-8.5A4.25 4.25 0 0016.25 3.5h-8.5zm4.25 3.25a5.25 5.25 0 110 10.5 5.25 5.25 0 010-10.5zm0 1.5a3.75 3.75 0 100 7.5 3.75 3.75 0 000-7.5zm5.75-.5a1.25 1.25 0 110 2.5 1.25 1.25 0 010-2.5z"/>
+                  </svg>
+                </a>
+              
+                <!-- WhatsApp -->
+                <a href="https://wa.me/917440259283" target="_blank" class="text-gray-400 hover:text-white transition-colors">
+                  <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 32 32" aria-hidden="true">
+                    <path d="M16 .25A15.72 15.72 0 000 16.02a15.6 15.6 0 002.36 8.31L.25 31.75l7.62-2a15.76 15.76 0 008.13 2.23h.01c8.73 0 15.83-7.1 15.83-15.74A15.66 15.66 0 0016 .25zm0 28.66h-.01a13.12 13.12 0 01-6.69-1.84l-.48-.29-4.52 1.2 1.2-4.41-.31-.45A13.05 13.05 0 012.5 16.02c0-7.19 5.85-13.04 13.05-13.04 3.49 0 6.77 1.36 9.24 3.83a12.9 12.9 0 013.82 9.22c0 7.19-5.85 13.04-13.06 13.04zm7.2-9.79c-.39-.2-2.29-1.13-2.65-1.26-.36-.13-.62-.2-.88.2-.26.39-1.01 1.26-1.24 1.52-.23.26-.46.29-.85.1-.39-.2-1.64-.6-3.12-1.91-1.15-1.02-1.92-2.29-2.15-2.68-.23-.39-.02-.6.17-.79.18-.18.39-.46.59-.69.2-.23.26-.39.39-.65.13-.26.07-.49-.03-.69-.1-.2-.88-2.12-1.2-2.9-.32-.77-.64-.67-.88-.68h-.75c-.26 0-.68.1-1.03.49-.36.39-1.35 1.32-1.35 3.23 0 1.91 1.38 3.75 1.57 4.01.2.26 2.72 4.15 6.6 5.82.92.4 1.64.63 2.2.8.92.29 1.76.25 2.42.15.74-.11 2.29-.93 2.61-1.82.32-.89.32-1.65.23-1.82-.1-.18-.36-.28-.75-.48z"/>
+                  </svg>
+                </a>
+              </div>
+              
+             
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
